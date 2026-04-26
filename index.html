@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Обучающий урок: Паралимпийцы Латвии</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f9;
+        }
+
+        /* Видео-заголовок (Мобильный вид по умолчанию) */
+        .video-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background: #000;
+            aspect-ratio: 16 / 9;
+        }
+
+        .video-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        /* Основной контент */
+        .content {
+            margin-top: 58vw; /* Динамический отступ под размер видео */
+            padding: 15px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        th, td {
+            width: 50%;
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+            vertical-align: top;
+            line-height: 1.4;
+        }
+
+        th {
+            background-color: #2c3e50;
+            color: white;
+            position: sticky;
+            top: 58vw; /* Для мобильных - прилипает под видео */
+        }
+
+        .original-text {
+            font-weight: 600;
+            color: #2c3e50;
+        }
+
+        .translation-text {
+            color: #444;
+        }
+
+        /* Мобильные устройства: уменьшение шрифта */
+        @media (max-width: 600px) {
+            table {
+                font-size: 0.9em;
+            }
+        }
+
+        /* Горизонтальный режим (Планшеты/ПК) */
+        @media (orientation: landscape) {
+            .video-container {
+                width: 45%;
+                height: 100vh;
+                position: fixed;
+            }
+
+            .content {
+                margin-top: 0;
+                margin-left: 45%;
+                height: 100vh;
+                overflow-y: auto;
+                padding: 0;
+            }
+
+            th {
+                position: sticky;
+                top: 0;
+                z-index: 10;
+            }
+
+            .video-container iframe {
+                height: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/0TQIQFDhP1Q" allowfullscreen></iframe>
+    </div>
+
+    <div class="content">
+        <table>
+            <thead>
+                <tr>
+                    <th>Latviešu (Original)</th>
+                    <th>Русский (Перевод)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="original-text">Ziemas paralimpiskajās spēlēs Latvija pārstāv rekordu liela septiņu sportistu komanda. Visi ir ratiņkērlingisti. Nosaukums pasaka priekšā ka atlēti pārvietojas ratiņkrēslos.</td>
+                    <td class="translation-text">На зимних Паралимпийских играх Латвию представляет рекордно большая команда из семи спортсменов. Все они — керлингисты на колясках. Название уже говорит о том, что атлеты передвигаются в инвалидных креслах.</td>
+                </tr>
+                <tr>
+                    <td class="original-text">Latvijas komanda dzīvo atlētu ciematā Kortīna Adam Peco. Tāpat kā olimpiskajās spēlēs arī tagad tajā ir 1400 gultas vietas.</td>
+                    <td class="translation-text">Латвийская команда живет в олимпийской деревне Кортина-д'Ампеццо. Как и во время Олимпийских игр, сейчас здесь имеется 1400 спальных мест.</td>
+                </tr>
+                <tr>
+                    <td class="original-text">Atšķirībā no olimpiskajām spēlēm paralimpisko spēļu laikā sportistiem pieejams īpašs servisa centrs kur pilnībā bez maksas iespējams salabot praktiski jebko kas nepieciešams.</td>
+                    <td class="translation-text">В отличие от Олимпийских игр, во время Паралимпийских игр спортсменам доступен специальный сервисный центр, где совершенно бесплатно можно отремонтировать практически всё необходимое.</td>
+                </tr>
+                <tr>
+                    <td class="original-text">Mēs esam šeit lai palīdzētu ikvienam sportistam un katrai komandai kam nepieciešama jebkāda tehniskā palīdzība.</td>
+                    <td class="translation-text">Мы здесь, чтобы помочь каждому спортсмену и каждой команде, которым требуется любая техническая помощь.</td>
+                </tr>
+                <tr>
+                    <td class="original-text">Tā var būt gan ratiņkrēslu protezēšana palīdzība ar ortopēdiskajām zolītēm vai jebkas cits. Dažreiz nepieciešamā palīdzība ir tikai slēpju soma kas ir jāpiešauj lai pārvietotu slēpes.</td>
+                    <td class="translation-text">Это может быть как ремонт инвалидных колясок, помощь с ортопедическими стельками или что-либо другое. Иногда необходимая помощь — это всего лишь подшить лыжную сумку для переноски лыж.</td>
+                </tr>
+                <tr>
+                    <td class="original-text">Tāpēc šeit mums ir īsta darbnīca ar visu nepieciešamo: urpšanas iekārtu putekļu sūcēju šujmašīnu un visiem citiem mazajiem instrumentiem kas varētu būt nepieciešami lai veiktu jebkādus remontdarbus.</td>
+                    <td class="translation-text">Поэтому здесь у нас настоящая мастерская со всем необходимым: сверлильным станком, пылесосом, швейной машинкой и всеми другими мелкими инструментами, которые могут понадобиться для проведения любых ремонтных работ.</td>
+                </tr>
+                <tr>
+                    <td class="original-text">Ātrums tas ir ļoti svarīgi jo sportisti nevar tērēt savu laiku. Viņiem ir jātrenējas jāsacenšas un arī jāatpūšas. Tāpēc mums jābūt diezgan ātriem.</td>
+                    <td class="translation-text">Скорость — это очень важно, потому что спортсмены не могут тратить свое время. Им нужно тренироваться, соревноваться и также отдыхать. Поэтому мы должны быть довольно быстрыми.</td>
+                </tr>
+                <tr>
+                    <td class="original-text">Frančesko ar kolēģiem norāda ka viņu klientu lokā paspējuši pabūt arī Latvijas komandas dalībnieki.</td>
+                    <td class="translation-text">Франческо с коллегами отмечают, что в кругу их клиентов уже успели побывать и участники латвийской команды.</td>
+                </tr>
+                <tr>
+                    <td class="original-text">Kopumā apstākļi ciematā ir gana labi. Es ļoti labi izgulējis tāpēc ka man ļoti labas matricis. Un tiešām apbrīnoju kā tik mazā telpiņa ir tik labi viss pielāgots ratiņiem.</td>
+                    <td class="translation-text">В целом условия в деревне достаточно хорошие. Я очень хорошо выспался, потому что у меня очень хорошие матрасы. И действительно восхищаюсь тем, как в такой маленькой комнатке всё так хорошо приспособлено для колясок.</td>
+                </tr>
+                <tr>
+                    <td class="original-text">Reāli viss pārdomāti skapīši tur iebraukt izbraukt tā kā nu man ļoti patīk jo ļoti ērti un tiešām viss ir sasniedzams.</td>
+                    <td class="translation-text">Реально всё продумано: шкафчики, возможность заехать и выехать, так что мне очень нравится — очень удобно и действительно всё достижимо.</td>
+                </tr>
+                <tr>
+                    <td class="original-text">Un pat piemēram pakarāmais ir lejā nevajag tur augšā iet nu tas ir tiešām paldies organizatoram ka viņi tik smalki visu ergonomiski pārdomā.</td>
+                    <td class="translation-text">И даже, например, вешалка находится внизу, не нужно тянуться наверх. За это действительно спасибо организаторам, что они так тонко и эргономично всё продумали.</td>
+                </tr>
+                <tr>
+                    <td class="original-text">Matrs ir vienkārši perfekto ļoti labs. Un te arī tik maz vietiņas bet apbrīnoju ka viss ienāca iekšā un pilnīgi ar ratiem var iebraukt arī dušas kabīnā ja un pēc tam aizverties.</td>
+                    <td class="translation-text">Матрас просто идеальный, очень хороший. И здесь хоть и мало места, но я восхищаюсь, что всё поместилось, и на коляске можно полностью заехать даже в душевую кабину и затем закрыться.</td>
+                </tr>
+                <tr>
+                    <td class="original-text">Lai arī ratiņlingist sacensības jau sākuši oficiāli spēles atklāj šovakar Veronas arēnā. Latvija tajā nekādā veidā nepiedalās jo agresorvalstu sportistiem lielajā forumā atļauts piedalīties ar savu karogu.</td>
+                    <td class="translation-text">Хотя соревнования по керлингу на колясках уже начались, официально игры открываются сегодня вечером на арене Вероны. Латвия в этом никак не участвует, так как спортсменам стран-агрессоров на большом форуме разрешено участвовать под своим флагом.</td>
+                </tr>
+                <tr>
+                    <td class="original-text">Jautājums par šo leģitimitāti šo sportistu. Jā juridiski viņiem bija šeit tiesības būt it kā bet cik tas ir sportiski atbilstoši jo atcerēsimies ka līdz pat pagājušā gada septembrim viņi nedrīkstēja piedalīties sacensībās un krāt punktus.</td>
+                    <td class="translation-text">Вопрос о легитимности этих спортсменов. Да, юридически у них вроде бы были права здесь находиться, но насколько это соответствует спортивному духу, ведь вспомним, что до сентября прошлого года им нельзя было участвовать в соревнованиях и копить очки.</td>
+                </tr>
+                <tr>
+                    <td class="original-text">Tad es zinu ka tikai decembra vidū tika pieņemts lēmums ar tiesas palīdzību ka viņi drīkst piedalīties slēpošanā tieši šo te kvalifikācijas mačos. Nu un tagad jautājums kā viņi mēneša pusotra laikā ieguva attiecīgos punktus lai šeit būtu.</td>
+                    <td class="translation-text">Затем я знаю, что только в середине декабря при помощи суда было принято решение, что они могут участвовать в лыжных гонках именно в этих квалификационных матчах. И теперь вопрос: как они за полтора месяца набрали соответствующие очки, чтобы быть здесь.</td>
+                </tr>
+                <tr>
+                    <td class="original-text">Latvija ir tikai viena no trim valstīm kas pārstāvēta abās ratiņkerlinga disciplīnās. Jaukto pāru sacensībās Poļina Ruškova un Agris Lasmis šodien izcīnīja pirmo uzvaru pārspējot Igauniju.</td>
+                    <td class="translation-text">Латвия — одна из трех стран, представленных в обеих дисциплинах керлинга на колясках. В соревнованиях смешанных пар Полина Рожкова и Агрис Ласмис сегодня одержали первую победу, обыграв Эстонию.</td>
+                </tr>
+                <tr>
+                    <td class="original-text">Bet jaukto komandu sacensības sāksies rīt. Matīss Timofejevs un Normunds Pavlovskis no Kortīnas Dampeco Itālijā.</td>
+                    <td class="translation-text">А соревнования смешанных команд начнутся завтра. Матисс Тимофеев и Нормундс Павловскис из Кортина-д'Ампеццо, Италия.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>
+```
+
+
+http://googleusercontent.com/youtube_content/0
